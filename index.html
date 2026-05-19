@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimeFan — фанатское аниме-сообщество</title>
+  <meta name="description" content="AnimeFan — некоммерческий фанатский проект об аниме: обзоры, новости, подборки и обсуждения." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">AnimeFan</div>
+      <div class="nav-links">
+        <a href="#about">О проекте</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#news">Новости</a>
+        <a href="#rights">Правообладателям</a>
+        <a href="#contacts">Контакты</a>
+        <a href="#account">Кабинет</a>
+        <a href="#admin">Админка</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div>
+        <div class="badge">🌸 Некоммерческое фанатское сообщество</div>
+        <h1>Аниме, обзоры и подборки <span class="gradient-text">для фанатов</span></h1>
+        <p>Информационный проект об аниме-культуре: новости, рекомендации, обсуждения, рейтинги и материалы из открытых источников с уважением к правообладателям.</p>
+        <div class="actions">
+          <a class="btn" href="#catalog">Открыть каталог</a>
+          <a class="btn secondary" href="#rights">Для правообладателей</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=1200&q=80" alt="Аниме и фанатская культура" />
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="section-head">
+        <h2>О проекте</h2>
+        <p>AnimeFan можно использовать как основу для сайта с обзорами, новостями, подборками, комментариями и фанатским сообществом.</p>
+      </div>
+      <div class="notice">
+        <strong>Важное уведомление:</strong><br><br>
+        Проект носит некоммерческий характер и не направлен на распространение контрафактных материалов с целью получения прибыли.
+        Мы являемся фанатским сообществом, созданным для предоставления посетителям качественного информационного контента,
+        собранного из открытых источников интернета. Все права на оригинальные произведения, персонажей, изображения,
+        названия и товарные знаки принадлежат их законным правообладателям.
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="features">
+        <div class="feature"><span>🔎</span><h3>Поиск и фильтры</h3><p>Пользователь может быстро находить подборки по жанрам, названию и рейтингу.</p></div>
+        <div class="feature"><span>⭐</span><h3>Рейтинги</h3><p>Можно добавить пользовательские оценки, избранное и персональные списки.</p></div>
+        <div class="feature"><span>📰</span><h3>Новости</h3><p>Раздел для анонсов сезонов, премьер, трейлеров и событий индустрии.</p></div>
+        <div class="feature"><span>⚖️</span><h3>Уважение к правам</h3><p>Отдельный блок для связи с администрацией по вопросам авторских прав.</p></div>
+      </div>
+    </section>
+
+    <section id="catalog" class="container">
+      <div class="section-head">
+        <h2>Каталог подборок</h2>
+        <p>Это демо-каталог. Позже его можно подключить к базе данных или API AniList / Jikan.</p>
+      </div>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Поиск по названию или жанру..." />
+        <select id="sort">
+          <option value="default">Сортировка</option>
+          <option value="rating">По рейтингу</option>
+          <option value="title">По названию</option>
+        </select>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="chip active" data-genre="all">Все</button>
+        <button class="chip" data-genre="Экшен">Экшен</button>
+        <button class="chip" data-genre="Романтика">Романтика</button>
+        <button class="chip" data-genre="Фэнтези">Фэнтези</button>
+        <button class="chip" data-genre="Драма">Драма</button>
+      </div>
+
+      <div class="grid" id="animeGrid"></div>
+    </section>
+
+    <section id="news" class="container">
+      <div class="section-head">
+        <h2>Новости и статьи</h2>
+        <p>Раздел можно использовать для публикации обзоров, рецензий и новостей сообщества.</p>
+      </div>
+      <div class="posts">
+        <article class="post"><time>19 мая 2026</time><h3>Как оформить фанатский сайт корректно</h3><p>Используйте собственные тексты, указывайте источники и размещайте контакт для обращений правообладателей.</p></article>
+        <article class="post"><time>18 мая 2026</time><h3>Топ жанров для первого каталога</h3><p>Начните с базовых категорий: экшен, приключения, романтика, фэнтези, драма и комедия.</p></article>
+        <article class="post"><time>17 мая 2026</time><h3>Что добавить в личный кабинет</h3><p>Избранное, список просмотренного, оценки, комментарии и уведомления о новых публикациях.</p></article>
+      </div>
+    </section>
+
+    <section id="rights" class="container">
+      <div class="section-head">
+        <h2>Правообладателям</h2>
+        <p>Готовый блок для обращения по вопросам авторских прав и удаления спорных материалов.</p>
+      </div>
+      <div class="two-col">
+        <div class="notice">
+          <strong>Политика реагирования:</strong><br><br>
+          Если вы являетесь правообладателем или его представителем и считаете, что информация на сайте нарушает ваши права,
+          отправьте обращение администрации. После проверки спорный материал может быть изменён или удалён.
+          <br><br>
+          Рекомендуется указать ссылку на страницу, описание претензии, подтверждение прав и контакт для обратной связи.
+        </div>
+        <div class="form-card">
+          <h3>Форма обращения</h3><br>
+          <form onsubmit="event.preventDefault(); alert('Демо-форма: позже её можно подключить к email или backend.');">
+            <input type="text" placeholder="Ваше имя или организация" required />
+            <input type="email" placeholder="Email для связи" required />
+            <input type="url" placeholder="Ссылка на спорную страницу" />
+            <textarea placeholder="Опишите обращение" required></textarea>
+            <button class="btn" type="submit">Отправить обращение</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="container">
+      <div class="section-head">
+        <h2>Контакты</h2>
+        <p>Здесь можно указать email администрации, ссылки на социальные сети, Discord/Telegram-сообщество и правила модерации.</p>
+      </div>
+      <div class="notice">
+        Email: admin@example.com<br>
+        Telegram: @animefan<br>
+        Discord: AnimeFan Community
+      </div>
+    </section>
+
+    <section id="account" class="container">
+      <div class="section-head">
+        <h2>Личный кабинет</h2>
+        <p>Демо-кабинет пользователя: избранное, статус, никнейм и список любимых подборок.</p>
+      </div>
+
+      <div class="two-col">
+        <div class="form-card">
+          <h3>Профиль</h3><br>
+          <form onsubmit="saveProfile(event)">
+            <input id="username" type="text" placeholder="Ваш никнейм" value="Senpai_404" />
+            <select id="userStatus">
+              <option>Смотрю онгоинги</option>
+              <option>Ищу что посмотреть</option>
+              <option>Люблю классику</option>
+              <option>Фанат экшена</option>
+            </select>
+            <button class="btn" type="submit">Сохранить профиль</button>
+            <button class="btn secondary" type="button" onclick="resetProfile()">Сбросить профиль</button>
+          </form>
+        </div>
+
+        <div class="notice">
+          <strong>Избранное:</strong><br><br>
+          <div id="favoritesList">Пока ничего не добавлено. Нажмите «В избранное» в карточке каталога.</div>
+          <br>
+          <button class="btn secondary" onclick="clearFavorites()">Очистить избранное</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="admin" class="container">
+      <div class="section-head">
+        <h2>Админ-панель</h2>
+        <p>Демо-админка для добавления новых карточек в каталог. В будущем это можно подключить к базе данных.</p>
+      </div>
+
+      <div class="form-card">
+        <h3>Добавить аниме-подборку</h3><br>
+        <form onsubmit="addAnime(event)">
+          <input id="adminTitle" type="text" placeholder="Название" required />
+          <select id="adminGenre">
+            <option>Экшен</option>
+            <option>Романтика</option>
+            <option>Фэнтези</option>
+            <option>Драма</option>
+          </select>
+          <input id="adminYear" type="number" placeholder="Год" value="2026" required />
+          <input id="adminRating" type="number" step="0.1" min="1" max="10" placeholder="Рейтинг" value="8.5" required />
+          <input id="adminImage" type="url" placeholder="Ссылка на изображение" value="https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80" />
+          <textarea id="adminText" placeholder="Описание" required></textarea>
+          <button class="btn" type="submit">Добавить в каталог</button>
+          <button class="btn secondary" type="button" onclick="resetAllData()">Сбросить все данные</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal()">×</button>
+      <h2 id="modalTitle"></h2>
+      <p class="meta" id="modalMeta"></p>
+      <p id="modalText"></p>
+      <br>
+      <div class="notice">Это демо-страница карточки. В полноценной версии здесь можно разместить обзор, трейлер, официальный источник, комментарии и похожие тайтлы.</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">© 2026 AnimeFan. Фанатский некоммерческий проект. Все права на оригинальные произведения принадлежат их правообладателям.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
